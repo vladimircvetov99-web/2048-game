@@ -36,3 +36,40 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-game {
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+} 
+
+.grid-cell[data-value] {
+    transition: background-color .2s;
+}
+
+.new-tile {
+    animation: spawntile .3s;
+}
+
+@keyframes spawntile {
+    from{
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

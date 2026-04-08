@@ -69,6 +69,15 @@ function randerBoard() {
         }
     }    
    }
+
+   setTimeout(() => {
+    const cells = document.querySelectorAll('.grid-cell');
+    cell.forEach(cell =>{
+        cell.classList.remove('merged-tile', 'new-tile');
+    })
+   }, 300);
+
+
 }
 
 
