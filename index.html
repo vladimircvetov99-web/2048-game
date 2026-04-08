@@ -3,11 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>2048</title>
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
+    <div class="score-container">
+      <div>Score: <span class="current-score">0</span></div>
+      <div>High Score: <span class="high-scroll">0</span></div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-grid">
+        <div class="grid-cell" data-row="0" dat-col="0"></div>
+        <div class="grid-cell" data-row="0" dat-col="1"></div>
+        <div class="grid-cell" data-row="0" dat-col="2"></div>
+        <div class="grid-cell" data-row="0" dat-col="3"></div>
+        <div class="grid-cell" data-row="1" dat-col="0"></div>
+        <div class="grid-cell" data-row="1" dat-col="1"></div>
+        <div class="grid-cell" data-row="1" dat-col="2"></div>
+        <div class="grid-cell" data-row="1" dat-col="3"></div>
+        <div class="grid-cell" data-row="2" dat-col="0"></div>
+        <div class="grid-cell" data-row="2" dat-col="1"></div>
+        <div class="grid-cell" data-row="2" dat-col="2"></div>
+        <div class="grid-cell" data-row="2" dat-col="3"></div>
+        <div class="grid-cell" data-row="3" dat-col="0"></div>
+        <div class="grid-cell" data-row="3" dat-col="1"></div>
+        <div class="grid-cell" data-row="3" dat-col="2"></div>
+        <div class="grid-cell" data-row="3" dat-col="3"></div>
+      </div>
+    </div>
+
+    <div class="game-over">
+      Game Over!
+      <button class="restart-game">Restart Game</button>
+    </div>
+
     <script src="JS/script.js"></script>
   </body>
 </html>
