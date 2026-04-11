@@ -6,6 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #fafafa;
+    overflow: hidden;
 }
 
 .game-container {
@@ -72,4 +73,50 @@ body {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.grid-cell[data-value="2"] {
+    background-color: #ffb3b3;
+}
+
+.grid-cell[data-value="4"] {
+    background-color: #99c9ff;
+}
+
+.grid-cell[data-value="8"] {
+    background-color: #85e6a1;
+}
+
+
+.grid-cell[data-value="16"] {
+    background-color: #ffd866;
+}
+
+.grid-cell[data-value="32"] {
+    background-color: #ff9f6e;
+}
+
+.grid-cell[data-value="64"] {
+    background-color: #66b5ff;
+}
+.grid-cell[data-value="128"] {
+    background-color: #ffcc33;
+}
+
+.grid-cell[data-value="256"] {
+    background-color: #52e0d1;
+}
+
+.grid-cell[data-value="512"] {
+    background-color: #ff7fbd;
+}
+
+.grid-cell[data-value="1024"] {
+    background-color: #a48cff;
+}
+.grid-cell[data-value="2048"] {
+    background-color: #ff6f61;
+}
+.grid-cell[data-value="4096"] {
+    background-color: #8c8c8c;
 }
